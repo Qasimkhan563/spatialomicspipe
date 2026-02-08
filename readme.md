@@ -1,10 +1,10 @@
-# # SpatialOmicsPipe
+# SpatialOmicsPipe
 
 > **Status:** 🚧 Active development (research / prototype stage)
 
-# SpatialOmicsPipe is an **NGFF-native spatial omics analysis framework** built on top of **SpatialData**, **OME-Zarr**, and the geospatial Python ecosystem. It focuses on **interactive, region-based spatial analysis** with first‑class support for **napari** as a visual analytics frontend.
+SpatialOmicsPipe is an **NGFF-native spatial omics analysis framework** built on top of **SpatialData**, **OME-Zarr**, and the geospatial Python ecosystem. It focuses on **interactive, region-based spatial analysis** with first‑class support for **napari** as a visual analytics frontend.
 
-This repository represents a **working, tested development version** of # SpatialOmicsPipe. Core functionality is implemented and validated locally, while packaging, UX polish, and CI/CD are still evolving.
+This repository represents a **working, tested development version** of SpatialOmicsPipe. Core functionality is implemented and validated locally, while packaging, UX polish, and CI/CD are still evolving.
 
 ---
 
@@ -12,7 +12,7 @@ This repository represents a **working, tested development version** of # Spatia
 
 Modern spatial transcriptomics produces *spatially indexed, multi‑modal data* that is difficult to explore with traditional single‑cell pipelines alone.
 
-# SpatialOmicsPipe was created to:
+SpatialOmicsPipe was created to:
 
 - Treat spatial omics data as **geometric objects** (points, regions, neighborhoods)
 - Leverage **SpatialData / NGFF** as the canonical data model
@@ -23,14 +23,14 @@ Modern spatial transcriptomics produces *spatially indexed, multi‑modal data* 
 
 ## ✨ Key Features
 
-### Core Library (`# SpatialOmicsPipe`)
+### Core Library (`SpatialOmicsPipe`)
 
 - ✅ NGFF‑native data handling via **SpatialData**
 - ✅ Region‑based expression computation
 - ✅ Polygon‑driven spatial queries
 - ✅ Compatible with Visium / spot‑based data
 
-### napari Plugin (`napari_# SpatialOmicsPipe`)
+### napari Plugin (`napari_SpatialOmicsPipe`)
 
 - ✅ Auto‑discovered napari plugin (manifest‑based)
 - ✅ Interactive polygon drawing (Shapes layer)
@@ -52,13 +52,13 @@ Modern spatial transcriptomics produces *spatially indexed, multi‑modal data* 
 ```text
 spatialdata-pipelines/
 │
-├── # SpatialOmicsPipe/                 # Core analysis library
+├── SpatialOmicsPipe/                 # Core analysis library
 │   ├── neighborhoods/           # Region / neighborhood computations
 │   ├── io/                      # Data loading helpers
 │   ├── cli.py                   # CLI entry point
 │   └── __init__.py
 │
-├── napari_# SpatialOmicsPipe/           # napari plugin package
+├── napari_SpatialOmicsPipe/           # napari plugin package
 │   ├── widget.py                # Interactive napari widget
 │   ├── napari.yaml              # napari plugin manifest
 │   └── __init__.py
@@ -100,7 +100,7 @@ poetry shell
 
 ---
 
-## ▶️ Running napari + # SpatialOmicsPipe
+## ▶️ Running napari + SpatialOmicsPipe
 
 ### Launch napari
 
@@ -108,9 +108,9 @@ poetry shell
 napari
 ```
 
-# SpatialOmicsPipe should automatically appear under:
+SpatialOmicsPipe should automatically appear under:
 
-> **Plugins → # SpatialOmicsPipe → Spatial Region Expression**
+> **Plugins → SpatialOmicsPipe → Spatial Region Expression**
 
 ---
 
@@ -122,7 +122,7 @@ The following workflow has been **executed and validated locally**:
 
 ```python
 import scanpy as sc
-from # SpatialOmicsPipe.io import load_visium_to_spatialdata
+from SpatialOmicsPipe.io import load_visium_to_spatialdata
 
 adata = sc.datasets.visium_sge()
 sdata = load_visium_to_spatialdata(adata)
