@@ -184,10 +184,6 @@ viewer.layers["tissue"].metadata["genes"] = list(points.var_names)
 
 ## ⚠️ Known Limitations (Current)
 
-This project is **intentionally transparent** about its current scope:
-
-- ❌ No Docker image yet
-- ❌ No CI/CD pipeline configured
 - ❌ UX still experimental (research‑grade)
 - ❌ Widget API may change
 - ❌ Large datasets not yet performance‑optimized
