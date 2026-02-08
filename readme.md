@@ -215,7 +215,7 @@ These are **planned improvements**, not architectural blockers.
 - Plugin integration tested locally
 - Active iteration ongoing
 
-The project is **not abandoned**, **not broken**, and **not theoretical** — it is simply in an early, honest development phase.
+The project is **not abandoned**, **not broken**, and **not theoretical** — it is in an development phase.
 
 ---
 
