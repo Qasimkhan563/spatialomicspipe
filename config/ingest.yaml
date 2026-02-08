@@ -1,0 +1,5 @@
+input:
+  path: data/V1_Mouse_Brain_Sagittal_Posterior
+
+output:
+  omezarr: output/mouse_brain.zarr

@@ -1,0 +1,13 @@
+name: spatialpipe
+display_name: SpatialPipe
+schema_version: 0.1.0
+
+contributions:
+  commands:
+    - id: spatialpipe.region_expression
+      title: Spatial Region Expression
+      python_name: napari_spatialpipe.widget:region_expression_widget
+
+  widgets:
+    - command: spatialpipe.region_expression
+      display_name: Spatial Region Expression
