@@ -23,14 +23,14 @@ SpatialOmicsPipe was created to:
 
 ## ✨ Key Features
 
-### Core Library (`SpatialOmicsPipe`)
+### Core Library (`SpatialPipe`)
 
 - ✅ NGFF‑native data handling via **SpatialData**
 - ✅ Region‑based expression computation
 - ✅ Polygon‑driven spatial queries
 - ✅ Compatible with Visium / spot‑based data
 
-### napari Plugin (`napari_SpatialOmicsPipe`)
+### napari Plugin (`napari_SpatialPipe`)
 
 - ✅ Auto‑discovered napari plugin (manifest‑based)
 - ✅ Interactive polygon drawing (Shapes layer)
@@ -52,13 +52,13 @@ SpatialOmicsPipe was created to:
 ```text
 spatialdata-pipelines/
 │
-├── SpatialOmicsPipe/                 # Core analysis library
+├── SpatialPipe/                 # Core analysis library
 │   ├── neighborhoods/           # Region / neighborhood computations
 │   ├── io/                      # Data loading helpers
 │   ├── cli.py                   # CLI entry point
 │   └── __init__.py
 │
-├── napari_SpatialOmicsPipe/           # napari plugin package
+├── napari_SpatialPipe/           # napari plugin package
 │   ├── widget.py                # Interactive napari widget
 │   ├── napari.yaml              # napari plugin manifest
 │   └── __init__.py
@@ -80,8 +80,8 @@ spatialdata-pipelines/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/spatialdata-pipelines.git
-cd spatialdata-pipelines
+git clone https://github.com/Qasimkhan563/spatialomicspipe.git
+cd spatialomicspipe
 ```
 
 ### 2️⃣ Install dependencies
@@ -90,7 +90,7 @@ cd spatialdata-pipelines
 poetry install
 ```
 
-> ⚠️ This project targets **Python 3.11–3.12**. Older versions are not supported.
+> ⚠️ This project targets **Python 3.11–3.13**. Older versions are not supported.
 
 ### 3️⃣ Activate the environment
 
@@ -122,7 +122,7 @@ The following workflow has been **executed and validated locally**:
 
 ```python
 import scanpy as sc
-from SpatialOmicsPipe.io import load_visium_to_spatialdata
+from SpatialPipe.io import load_visium_to_spatialdata
 
 adata = sc.datasets.visium_sge()
 sdata = load_visium_to_spatialdata(adata)
